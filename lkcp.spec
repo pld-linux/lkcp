@@ -29,6 +29,7 @@ ostatnie zmiany dokonane w systemie plików /proc/sys.
 
 %build
 %{__make} -C src \
+	RESET=true \
 	CC="%{__cc}" \
 	FLAGS="%{rpmcflags} -I/usr/include/ncurses"
 
