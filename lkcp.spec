@@ -4,7 +4,8 @@ Version:	0.5.3
 Release:	1
 License:	GPL v2
 Group:		Applications
-Source0:	http://webspace.utexas.edu/hyoussef/www/%{name}-%{version}.tar.bz2
+#Source0:	http://webspace.utexas.edu/hyoussef/www/%{name}-%{version}.tar.bz2
+Source0:	%{name}-%{version}.tar.bz2
 # Source0-md5:	020f788b8c9ac52636b357e8929f7e30
 URL:		http://webspace.utexas.edu/~hyoussef/
 BuildRequires:	glib-devel
@@ -18,8 +19,8 @@ the /proc filesystem. It also generates a bash script of your recently
 committed changes to the /proc/sys filesystem.
 
 %description -l pl
-Live Kernel Configuration Panel (LKCP) to opraty na ncurses interfejs do
-konfiguracji j±dra systemu Linux w trakcie pracy (za pomoc± systemu
+Live Kernel Configuration Panel (LKCP) to opraty na ncurses interfejs
+do konfiguracji j±dra systemu Linux w trakcie pracy (za pomoc± systemu
 plików /proc). Program ten generuje tak¿e skrypt w bashu zawieraj±cy
 ostatnie zmiany dokonane w systemie plików /proc/sys.
 
