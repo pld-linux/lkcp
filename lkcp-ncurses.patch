@@ -1,0 +1,80 @@
+diff -ur lkcp-0.5.4/src/acknowledge.h lkcp-0.5.4.new/src/acknowledge.h
+--- lkcp-0.5.4/src/acknowledge.h	2005-11-21 01:05:31.000000000 +0000
++++ lkcp-0.5.4.new/src/acknowledge.h	2005-11-21 15:58:30.216412000 +0000
+@@ -2,10 +2,10 @@
+ #define __ACKNOWLEDGE_H__
+ 
+ #include <unistd.h>
+-#include <ncurses.h>
++#include <ncurses/ncurses.h>
+ #include <string.h>
+ #include <stdlib.h>
+-#include <form.h>
++#include <ncurses/form.h>
+ 
+ 
+ #define ESC 27
+diff -ur lkcp-0.5.4/src/dbg.c lkcp-0.5.4.new/src/dbg.c
+--- lkcp-0.5.4/src/dbg.c	2005-11-21 01:05:31.000000000 +0000
++++ lkcp-0.5.4.new/src/dbg.c	2005-11-21 15:58:58.746195000 +0000
+@@ -1,6 +1,6 @@
+ #include <stdlib.h>
+ #include <string.h>
+-#include <ncurses.h>
++#include <ncurses/ncurses.h>
+ #include <errno.h>
+ #include <unistd.h>
+ #include <sys/types.h>
+diff -ur lkcp-0.5.4/src/entries.h lkcp-0.5.4.new/src/entries.h
+--- lkcp-0.5.4/src/entries.h	2005-11-21 01:05:31.000000000 +0000
++++ lkcp-0.5.4.new/src/entries.h	2005-11-21 15:59:50.929456250 +0000
+@@ -7,7 +7,7 @@
+ #include <strings.h>
+ #include <ctype.h>
+ #include <stdlib.h>
+-#include <form.h>
++#include <ncurses/form.h>
+ 
+ #define EDIT_MODE       0
+ #define VIEW_MODE       1
+diff -ur lkcp-0.5.4/src/lkcp.h lkcp-0.5.4.new/src/lkcp.h
+--- lkcp-0.5.4/src/lkcp.h	2005-11-21 01:05:31.000000000 +0000
++++ lkcp-0.5.4.new/src/lkcp.h	2005-11-21 15:59:07.046713750 +0000
+@@ -2,7 +2,7 @@
+ #define __LKCP_H__
+ 
+ #include <unistd.h>
+-#include <ncurses.h>
++#include <ncurses/ncurses.h>
+ #include <sys/types.h>
+ #include <dirent.h>
+ #include <errno.h>
+diff -ur lkcp-0.5.4/src/lkcp_main.c lkcp-0.5.4.new/src/lkcp_main.c
+--- lkcp-0.5.4/src/lkcp_main.c	2005-11-21 01:05:31.000000000 +0000
++++ lkcp-0.5.4.new/src/lkcp_main.c	2005-11-21 15:59:19.091466500 +0000
+@@ -6,9 +6,9 @@
+  ----------------------------------------------------------
+ */
+ #include <stdio.h>
+-#include <curses.h>
++#include <ncurses/curses.h>
+ #include <signal.h>
+-#include <menu.h>
++#include <ncurses/menu.h>
+ #include <stdlib.h>
+ #include <string.h>
+ #include <sys/types.h>
+diff -ur lkcp-0.5.4/src/search.h lkcp-0.5.4.new/src/search.h
+--- lkcp-0.5.4/src/search.h	2005-11-21 01:05:31.000000000 +0000
++++ lkcp-0.5.4.new/src/search.h	2005-11-21 15:58:38.992960500 +0000
+@@ -3,8 +3,8 @@
+ 
+ #include <unistd.h>
+ #include <stdlib.h>
+-#include <ncurses.h>
+-#include <form.h>
++#include <ncurses/ncurses.h>
++#include <ncurses/form.h>
+ #include <glob.h>
+ #include "entries.h"
+ #include "scr_err_hndl.h"
