@@ -1,13 +1,13 @@
 Summary:	Live Kernel Configuration Panel
 Summary(pl):	Live Kernel Configuration Panel - panel do konfiguracji j±dra w czasie pracy
 Name:		lkcp
-Version:	0.5.3
+Version:	0.5.4
 Release:	1
 License:	GPL v2
 Group:		Applications
-#Source0:	http://webspace.utexas.edu/hyoussef/www/%{name}-%{version}.tar.bz2
-Source0:	%{name}-%{version}.tar.bz2
-# Source0-md5:	020f788b8c9ac52636b357e8929f7e30
+Source0:	https://webspace.utexas.edu/~hyoussef/%{name}-%{version}.tar.gz
+# Source0-md5:	9c630b1cf338761cf93c116943bfc7e9
+Patch0:		%{name}-ncurses.patch
 URL:		http://webspace.utexas.edu/~hyoussef/
 BuildRequires:	glib-devel
 BuildRequires:	ncurses-devel
@@ -27,6 +27,7 @@ ostatnie zmiany dokonane w systemie plików /proc/sys.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__make} -C src \
@@ -44,5 +45,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS CREDITS Changelog README TODO Documentation/
+%doc AUTHORS Changelog README TODO Documentation/
 %attr(755,root,root) %{_bindir}/*
