@@ -1,5 +1,5 @@
 Summary:	Live Kernel Configuration Panel
-Summary(pl):	Live Kernel Configuration Panel - panel do konfiguracji j±dra w czasie pracy
+Summary(pl.UTF-8):   Live Kernel Configuration Panel - panel do konfiguracji jÄ…dra w czasie pracy
 Name:		lkcp
 Version:	0.5.4
 Release:	1
@@ -19,11 +19,11 @@ run-time Linux kernel configuration data that can be accessed through
 the /proc filesystem. It also generates a bash script of your recently
 committed changes to the /proc/sys filesystem.
 
-%description -l pl
+%description -l pl.UTF-8
 Live Kernel Configuration Panel (LKCP) to oparty na ncurses interfejs
-do konfiguracji j±dra systemu Linux w trakcie pracy (za pomoc± systemu
-plików /proc). Program ten generuje tak¿e skrypt w bashu zawieraj±cy
-ostatnie zmiany dokonane w systemie plików /proc/sys.
+do konfiguracji jÄ…dra systemu Linux w trakcie pracy (za pomocÄ… systemu
+plikÃ³w /proc). Program ten generuje takÅ¼e skrypt w bashu zawierajÄ…cy
+ostatnie zmiany dokonane w systemie plikÃ³w /proc/sys.
 
 %prep
 %setup -q
