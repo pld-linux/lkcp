@@ -1,5 +1,5 @@
 Summary:	Live Kernel Configuration Panel
-Summary(pl.UTF-8):   Live Kernel Configuration Panel - panel do konfiguracji jądra w czasie pracy
+Summary(pl.UTF-8):	Live Kernel Configuration Panel - panel do konfiguracji jądra w czasie pracy
 Name:		lkcp
 Version:	0.5.4
 Release:	1
